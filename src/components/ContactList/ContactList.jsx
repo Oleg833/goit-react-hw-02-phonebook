@@ -5,9 +5,9 @@ const ContactList = ({ contacts, deleteContact }) => (
     <ul className={css.contactList}>
         {contacts.map(({ id, name, number }) => {
             return (
-                <li key={id}>
-                    <p>{name}: {number}</p>
-                    <button type="button" onClick={() => deleteContact(id)}>
+                <li key={id} className={css.item}>
+                    <p className={css.value}>{name}: {number}</p>
+                    <button type="button" onClick={() => deleteContact(id)} className={css.btn}>
                     Delete</button>
                 </li>
             );
