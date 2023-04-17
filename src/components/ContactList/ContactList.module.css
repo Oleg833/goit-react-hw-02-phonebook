@@ -2,20 +2,21 @@
 .contactList {
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    /* justify-content: center; */
+    /* align-items: center; */
     gap: 10px;
     list-style: none;
 }
 .item {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     gap: 10px;
 }
 .value {
     font-size: 24px;
     font-weight: 500;
+    margin: 0;
 }
 
 .btn {
